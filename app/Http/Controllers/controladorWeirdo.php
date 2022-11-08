@@ -5,15 +5,15 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\validadorWeirdo;
 use App\Http\Requests\validadorWeirdoActualizarComic;
+use App\Http\Requests\validadorWeirdoActualizarArticulo;
 use App\Http\Requests\validadorWeirdoAgregarArticulo;
 use App\Http\Requests\validadorWeirdoAgregarComic;
-use App\Http\Requests\validadorAgregarArticulo;
 
 class controladorWeirdo extends Controller
 {
     public function confirmarFormulario(validadorWeirdo $req)
     {
-        return redirect('/')->with('confirmacion', 'Información Recibida');
+        return redirect('index')->with('confirmacion', 'Información Recibida');
     }
 
     public function confirmarComic(validadorWeirdoAgregarComic $req)
@@ -23,7 +23,11 @@ class controladorWeirdo extends Controller
 
     public function confirmarActualizacionComic(validadorWeirdoActualizarComic $req)
     {
-        return redirect('comics')->with('actualizacion', 'comic Recibida');
+        return redirect('comics')->with('actualizacion', 'comic Recibido');
+    }
+    public function confirmarActualizacionArticulo(validadorWeirdoActualizarArticulo $req)
+    {
+        return redirect('articulos')->with('actualizacion', 'articulo Recibido');
     }
 
     public function confirmarArticulo(validadorWeirdoAgregarArticulo $req)
@@ -56,6 +60,10 @@ class controladorWeirdo extends Controller
     public function showEditarComic()
     {
         return view('editarComic');
+    }
+    public function showEditarArticulo()
+    {
+        return view('editarArticulo');
     }
 
     public function showArticulos()

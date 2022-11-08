@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\controladorWeirdo;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -10,17 +11,14 @@ use Illuminate\Support\Facades\Route;
 | Here is where you can register web routes for your application. These
 | routes are loaded by the RouteServiceProvider within a group which
 | contains the "web" middleware group. Now create something great!
-|
-*/
-
-Route::get('/', function () {
+|Route::get('/', function () {
     return view('template');
 });
 Route::get('addArt', function () {
     return view('agregarArt');
 });
+*/
 
-/*
 Route::get('/', [controladorWeirdo::class, 'showLogin'])->name('apodoLogin');
 Route::get('index', [controladorWeirdo::class, 'showIndex'])->name('apodoIndex');
 Route::get('comics', [controladorWeirdo::class, 'showComics'])->name('apodoComics');
@@ -29,6 +27,7 @@ Route::get('editarComic', [controladorWeirdo::class, 'showEditarComic'])->name('
 
 Route::get('articulos', [controladorWeirdo::class, 'showArticulos'])->name('apodoArticulos');
 Route::get('agregarArticulo', [controladorWeirdo::class, 'showAgregarArticulo'])->name('apodoAgregarArticulo');
+Route::get('editarArticulo', [controladorWeirdo::class, 'showEditarArticulo'])->name('apodoEditarArticulo');
 
 
 
@@ -39,4 +38,4 @@ Route::post('validarLogin', [controladorWeirdo::class, 'confirmarFormulario']);
 Route::post('validarComic', [controladorWeirdo::class, 'confirmarComic']);
 Route::post('validarArticulo', [controladorWeirdo::class, 'confirmarArticulo']);
 Route::post('validarComicActualizar', [controladorWeirdo::class, 'confirmarActualizacionComic']);
-*/
+Route::post('validarArticuloActualizar', [controladorWeirdo::class, 'confirmarActualizacionArticulo']);

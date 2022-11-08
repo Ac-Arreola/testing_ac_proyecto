@@ -1,7 +1,9 @@
 @extends('template')
+ 
 @section('titulo')
-    Menú
+    Menú  
 @stop
+
 @section('contenido')
 
 
@@ -22,8 +24,9 @@
 
 
     <div class="container mt-5">
-        <div class="card card-body mt-3" id="cardMenú">
-            <div class="display-3 mt-3 mb-5 text-center" style="color: black;"> Menú </div>
+        <div class="card card-body mt-3" id="cardMenú" >
+            <div class="display-3 mt-3 mb-5 text-center" style="color: black;"><font face="Comic Sans MS,arial,verdana">
+                Menú </font> </div>
             <form action="comics">
                 <div class="d-grid gap-2">
                     <button type="submit" class="btn btn-primary mb-3">

@@ -47,9 +47,9 @@
     {{-- Tabla de comics --}}
   
 
-    <div class="display-3 mt-3 mb-5 text-center " style="color: white">Inventario Comics</div>
+    <div class="display-3 mt-3 mb-5 text-center " style="color: white"><font face="Comic Sans MS,arial,verdana">Inventario Comics</div>
 
-<div >
+<div class="container">
     <table class="table table-success table-striped mt-3">
         <thead>
           <tr>
@@ -89,6 +89,7 @@
             </td>
           </tr>
         </tbody>
+      </font>
     </table>
 </div>
 

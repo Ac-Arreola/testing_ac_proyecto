@@ -4,7 +4,7 @@
 @stop
 @section('contenido')
 {{-- Actualización de comics --}}
-@if (session()->has('articuloActualizado'))
+@if (session()->has('actualizacion'))
 {!! "<script>Swal.fire(
         'Correcto!',
         'Artículo actualizado',
@@ -47,9 +47,9 @@
     {{-- Tabla de comics --}}
   
 
-    <div class="display-3 mt-3 mb-5 text-center " style="color: white">Inventario Artículos</div>
+    <div class="display-3 mt-3 mb-5 text-center " style="color: white"><font face="Comic Sans MS,arial,verdana">Inventario Artículos</div>
 
-<div >
+<div class="container">
     <table class="table table-success table-striped mt-3">
         <thead>
           <tr>
@@ -66,7 +66,7 @@
             <td> 10 </td>
             <td> $50</td>
             <td>
-              <a href="" class="btn btn-warning">Actualizar</a>
+              <a href="editarArticulo" class="btn btn-warning">Actualizar</a>
               <button onclick="borrarArticulo()" class="btn btn-danger"> Borrar </button>
             </td>
           </tr>
@@ -75,7 +75,7 @@
             <td> 30 </td>
             <td> $10</td>
             <td>
-              <a href="" class="btn btn-warning">Actualizar</a>
+              <a href="editarArticulo" class="btn btn-warning">Actualizar</a>
             <button onclick="borrarArticulo()" class="btn btn-danger"> Borrar </button>
             </td>
           </tr>
@@ -84,11 +84,12 @@
             <td> 120 </td>
             <td> $5</td>
             <td>
-              <a href="" class="btn btn-warning">Actualizar</a>
+              <a href="editarArticulo" class="btn btn-warning">Actualizar</a>
               <button onclick="borrarArticulo()" class="btn btn-danger"> Borrar </button>
             </td>
           </tr>
         </tbody>
+      </font>
     </table>
 </div>
 
