@@ -7,6 +7,7 @@ use App\Http\Requests\validadorWeirdo;
 use App\Http\Requests\validadorWeirdoActualizarComic;
 use App\Http\Requests\validadorWeirdoActualizarArticulo;
 use App\Http\Requests\validadorWeirdoAgregarArticulo;
+use App\Http\Requests\validadorWeirdoAgregarPedido;
 use App\Http\Requests\validadorWeirdoAgregarComic;
 
 class controladorWeirdo extends Controller
@@ -34,12 +35,21 @@ class controladorWeirdo extends Controller
     {
         return redirect('articulos')->with('articuloAgregado', 'Articulo Recibida');
     }
-
+    public function confirmarPedido(validadorWeirdoAgregarPedido $req)
+    {
+        return redirect('pedidos')->with('pedidoAgregado', 'Articulo Recibida');
+    }
 
 
     public function showLogin()
     {
         return view('login');
+    }
+
+
+    public function showInventario()
+    {
+        return view('inventario');
     }
 
     public function showIndex()
@@ -61,6 +71,21 @@ class controladorWeirdo extends Controller
     {
         return view('editarComic');
     }
+
+    public function showPedidos()
+    {
+        return view('pedido');
+    }
+    public function showAgregarPedido()
+    {
+        return view('agregarPedido');
+    }
+
+    public function showPuntoVenta()
+    {
+        return view('pVenta');
+    }
+
     public function showEditarArticulo()
     {
         return view('editarArticulo');

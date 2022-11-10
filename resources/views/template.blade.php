@@ -14,7 +14,8 @@
   <title>WeirdO'Comics | @yield('titulo')</title>
 </head>
 
-<body style="background: rgb(33, 16, 74)">  
+<body >
+ <!--  style="background: rgb(33, 16, 74)"  -->
   {{-- Nav --}}
 
 

@@ -29,7 +29,7 @@
     {{-- Nav --}}
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img id="icono" src="{{asset('imgs/comic.png')}}"></a>
+          <a class="navbar-brand" href="index"><img id="icono" src="{{asset('imgs/comic.png')}}"></a>
           
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
@@ -47,9 +47,9 @@
     {{-- Tabla de comics --}}
   
 
-    <div class="display-3 mt-3 mb-5 text-center " style="color: white"><font face="Comic Sans MS,arial,verdana">Inventario Artículos</div>
+    <div class="display-3 mt-5 mb-5 text-center " style="color: white"><font face="Comic Sans MS,arial,verdana">Inventario Artículos</div>
 
-<div class="container">
+<div class="container ">
     <table class="table table-success table-striped mt-3">
         <thead>
           <tr>
