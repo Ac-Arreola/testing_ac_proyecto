@@ -49,6 +49,12 @@
 
 
 <div class="container">
+  
+  <form class="d-flex">
+    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+    <button class="btn btn-outline-success" type="submit">Search</button>
+  </form>
+
     <table class="table table-success table-striped mt-3">
         <thead>
           <tr>
@@ -90,18 +96,21 @@
 </div>
 </div>
 
-
+   {{--
 <div class="container">
 <ul class="nav nav-tabs">
   <li class="nav-item">
     <a class="nav-link active" aria-current="page" href="#">Active</a>
+
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="#">Link</a>
+    
+
+
   </li>
   
 </ul>
-</div>
+</div>--}}
 
 
 
