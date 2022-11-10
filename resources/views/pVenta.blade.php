@@ -37,6 +37,75 @@ Punto de Venta
 
 <div class="container text-center">
 
+  <div class="row" id="productoss">
+    <div class="col-md-6">
+        <h4>Cantidad</h4>
+        <input type="number" name="cantidadProducto" placeholder="#">
+    </div>
+    <div class="col-md-6">
+        <h4>Producto</h4>
+        <input type="text" name="nombreProducto" >
+    </div>
+</div>
+
+<div id="tablaProductos" class="mt-4">
+    <table class="table table-success table-striped">
+      <thead>
+        <tr>
+          <td>Cantidad:</td>
+          <td>Producto:</td>
+          <td>Precio:</td>
+          <td>Descuento:</td>
+          <td>Importe:</td>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Cómic 1</td>
+          <td>$25</td>
+          <td>$0</td>
+          <td>$25</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Llavero promocional</td>
+            <td>$10</td>
+            <td>$0</td>
+            <td>$20</td>
+          </tr>
+          <tr>
+            <td>1</td>
+            <td>Cómic 2</td>
+            <td>$15</td>
+            <td>$0</td>
+            <td>$15</td>
+          </tr>
+      </tbody>
+    </table>
+</div>
+
+
+
+<div class="container">
+    <div class="card card-body mt-4" id="importe">
+        <div class="row">
+                <div class="col-md-6">
+                    <div><h6>SUBTOTAL:</h6></div>
+                    <div><h6>$0.00</h6></div>
+                </div>
+                <div class="col-md-6">
+                    <div><h6>TOTAL:</h6></div>
+                    <div><h6>$0.00</h6></div>
+                </div>
+        </div>  
+    </div>
+</div>
+
+
+
+
 
 
 </div>
